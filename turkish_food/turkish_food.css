@@ -33,14 +33,9 @@ body {
 .itemDiv img:hover {
     opacity: .6;
     transition: .5s;
+    cursor: pointer;
 }
-.itemDiv.textSalcaliMantar {
-    position: absolute;
-    bottom: 5px;
-    left: 60px;
-}
-.itemDiv.textTavukluMantar {
-    position: absolute;
-    bottom: 5px;
-    left: 60px;
+.textImages {
+    bottom: 0px;
+    color: gray;
 }
