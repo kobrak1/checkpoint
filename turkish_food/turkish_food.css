@@ -25,12 +25,12 @@ body {
     opacity: .6;
     transition: .5s;
 }
-.textSalcaliMantar {
+.itemDiv.textSalcaliMantar {
     position: absolute;
     bottom: 5px;
     left: 60px;
 }
-.textTavukluMantar {
+.itemDiv.textTavukluMantar {
     position: absolute;
     bottom: 5px;
     left: 60px;
