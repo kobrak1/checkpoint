@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url(https://i.redd.it/mountain-1920x1080-v0-ghbmrbnbhba81.png?s=045b950301eabc2c103430c399d6069fd48217a3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+.main-container {
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    background-color: rgb(211, 211, 211, .2);
+    backdrop-filter: blur(15px);
+    border: 1px solid gray;
+    width: 300px;
+    height: 300px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 10%;
+}
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    gap: 1rem;
+    padding-top: 1rem;
+    margin: 0 auto;
+}
+
+#name, #age {
+    background-color: rgba(207, 205, 205, 0.2);
+    border-radius: 30px;
+}
+input::placeholder {
+    color: black;
+}
+
+.btn-add {
+    background-color: rgba(150, 223, 159, 0.3);
+    border-radius: 5px;
+    width: 100px;
+}
+.btn-delete {
+    background-color: rgba(223, 173, 150, 0.3);
+    border-radius: 5px;
+    width: 100px;
+}
+.btn-update {
+    background-color: rgba(150, 182, 223, 0.3);
+    border-radius: 5px;
+    width: 100px;
+}
+/*button hovers*/
