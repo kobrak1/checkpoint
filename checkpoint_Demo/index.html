@@ -8,14 +8,15 @@
     <body>
         <div class="main-container">
             <div class="input-container">
-                <input type="text" id="name" placeholder="Name" required>
-                <input type="number" id="age" placeholder="Age" max="150" required>   
+                <input id="name" type="text" placeholder=" Name" required>
+                <input id="age" type="number" placeholder=" Age" min="1" required>   
             </div>
             <div class="btn-container">
-                <button class="btn-add" id="add" onclick="saveData()">Add</button>
-                <button class="btn-delete" id="delete" onclick="deleteData()">Delete</button>
-                <button class="btn-update" id="update">Update</button>
-            </div>
+                <button id="add" class="btn-add" onclick="addData()">Add</button>
+                <button id="delete" class="btn-delete" onclick="deleteData()">Delete</button>
+                <button id="update" class="btn-update">Update</button>
+            </div><br>
+            <div id="userList"></div>
         </div>
         <script src="app.js"></script>
     </body>

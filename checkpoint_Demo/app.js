@@ -1,48 +1,25 @@
-/*
-const add = document.getElementById("add");
-const del = document.getElementById("delete");
-const update = document.getElementById("update");
-*/
+const addBtn = document.getElementById("add");
+const deleteBtn = document.getElementById("delete");
 
-function saveData() {
-    //declare the variables
-    const nameInput = document.getElementById("name");
-    const ageInput  = document.getElementById("age");
-
-    //get the values from input fields
-    const name = nameInput.value;
-    const age = ageInput.value;
-
-    // control if both attributes provided
-    if (name.trim() === '' || age.trim() === '') {
-        alert('Please enter both name and age.');
-        return;
-    }
-
-    const data = {
-        name: name,
-        age: age
-    };
-
-    let existingData = JSON.parse(localStorage.getItem('userData')) || [];
-    existingData.push(data);
-    localStorage.setItem('userData', JSON.stringify(existingData));
-
-    alert('Data saved to Local Storage!');
+const dataObject = {
+    name: nameInput.value,
+    age: ageInput.value
 };
 
-// function to delete the data
-function deleteData() {
+//add function
+addBtn.addEventListener("click", () => {
+    const nameInput = document.getElementById("name").value;
+    const ageInput = document.getElementById("age").value;
+});
 
-    let existingData = JSON.parse(localStorage.getItem('userData')) || [];
-    localStorage.removeItem('userData');
+function addData() {
+    const storedData = localStorage.getItem("fuckData");
 
-
-    alert('Data deleted from Local Storage!');
-}
-
-  
-  
-  
-  
-  
+    if (storedData) {
+        storedData = JSON.parse(storedData);
+        storedData.push(dataObject);
+    } else {
+        storedData = [dataObject];
+    };
+    
+};

@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(239, 239, 239);
 }
 
 body {
@@ -14,6 +15,8 @@ body {
 .main-container {
     margin: 0 auto;
     position: relative;
+    justify-content: center;
+    text-align: center;
     top: 150px;
     background-color: rgb(211, 211, 211, .2);
     backdrop-filter: blur(15px);
@@ -65,3 +68,11 @@ input::placeholder {
     width: 100px;
 }
 /*button hovers*/
+input::placeholder {
+    color: rgb(239, 239, 239);
+}
+.btn-container button:hover {
+    cursor: pointer;
+    color: black;
+    transition: .3s ease;
+}
